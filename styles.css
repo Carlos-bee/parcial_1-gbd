@@ -1,0 +1,62 @@
+*{
+    background-image: url('./img/fondo.jpg');
+    padding: 0;
+	margin: 0;
+	font-family: century;
+	text-align: center;
+ }
+ 
+ .container{
+     padding: 50px;
+     width: 90%;
+     margin: auto;
+     text-align: center;
+     line-height: 90%;
+ }
+ h1{
+color:crimson;
+padding: 20px;
+font-size: 40px;
+ }
+ form{
+     padding: 50px;
+     width: 600px;
+	 background:rgb(0, 0, 0);
+	 margin: calc(15% + 80px);
+	 margin-top: 60px;
+	 padding-top: 28px;
+	 margin-bottom: 30px
+   
+ }
+
+ p{
+    color:cornsilk;
+    padding:10px;
+    font-size:20px;
+ }
+ select{
+     font-size:16px;
+     padding:10px;
+     width: 600px;
+     background:cornsilk;
+     -webkit-appearance: none;
+ }
+ 
+input {
+	width: 577px;
+	padding: 9px;
+	margin: 50;
+	margin-top: 12px;
+    background:cornsilk;
+	font-size: 13px
+}
+
+input[type='button']{
+	background-color:crimson;
+	color: #fff;
+	width: 500px;
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+	
+}

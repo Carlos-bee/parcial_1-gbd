@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Comercial</title>
+    
+    <!-- CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+       
+       <script>
+            
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyC1kbYwAPQ1afqOR-ugR66FpJaSPi07S1I",
+                authDomain: "parcialgbd-carlosortiz-191764.firebaseapp.com",
+                projectId: "parcialgbd-carlosortiz-191764",
+                storageBucket: "parcialgbd-carlosortiz-191764.appspot.com",
+                messagingSenderId: "1065385804449",
+                appId: "1:1065385804449:web:19c7d7136a9db784e866e0"
+            };
+
+                // Initialize Firebase
+                const firebaseApp = firebase.initializeApp(firebaseConfig);
+                // const db = firebaseApp.firestore();
+                // comst auth = firebaseApp.auth();
+        </script>
+
+        <script src="./firestore.js"></script>
+
+        <div class="container">
+            <h1>BIENBENIDOS A ESTE SU CENTRO COMERCIAL</h1>
+            <br>
+            <br>
+            <h1>LAS PELICULAS QUE SE ESTAN OFRECIENDO SON: </h1>
+            <h1>MINIUM Y FROZEN</h1>
+            <form  id="registro" >
+
+                <p>Ingresa tus nombres:    </p>
+                <input type="text" name="nombres" id="nombres" placeholder="Ingresa tu nombre">
+                <br>
+
+                <p>Ingresa tus apellidos:    </p>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus apellidos ">
+                <br>
+                
+                <p>Ingresa alguna de las dos peliculas que se ofrecen:    </p>
+                
+                <input type="text" name="pelicula" id="pelicula" placeholder="Ingresa la pelicula que deseas ver ">
+                <br>
+
+                <p>Numero de entradas a reservar:    </p>
+                <input type="text" name="entradas" id="entradas" placeholder="Ingrese los entradas a reservar">
+
+                <br>
+                <input type="button" onclick="comprar()" value="HACER RESERVA">
+                <input type="button" onclick="eliminar(id)" value="CANCELAR RESERVA">
+                <input type="button" onclick="modificar()" value="CAMBIAR RESERVA">
+            </form>
+        </div>
+        
+    </body>
+</html>
